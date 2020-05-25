@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Registration</title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/registration.css" />
+		<link rel="stylesheet" href="../css/base.css" />
+		<meta name='viewport' content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	</head>
+	<body>
+		<!-- registration home page -->
+		<div id='registration--page' class='container-fluid flex-center page'>
+			<div class='col-lg-8 col-md-8 col-sm-12 col-xs-12 height-inherit flex-col jus-center' id='registration--main'>
+				<div class='row' id='last-page'>
+					<a href='home.html' class="btn btn-primary glyphicon glyphicon-arrow-left"></a>
+				</div>
+				<div class='row flex-center' id='registration--title'>
+					<p class='text-primary'>Registration</p>
+				</div>
+				<div class='row flex-center'>
+					<button class='btn btn-success' id='register--student'>
+						Register as Student
+					</button>
+				</div>
+				<div class='row flex-center'>
+					<button class='btn btn-success' id='register--staff'>
+						Register as Staff
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- registration student page -->
+		<div id='registration--page--student' class='container-fluid flex-col jus-center align-center page hidden'>
+			<div class='col-lg-8 col-md-8 col-sm-12 col-xs-12 height-inherit'>
+				<div class='row'>
+					<span class="btn btn-primary glyphicon glyphicon-arrow-left back-btn"></span>
+				</div>
+				<div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 register-form flex-col jus-center align-center' id='register--student--form'>
+					<div class='row text-primary'>
+						<h2>Register as Student</h2>
+					</div>
+					<div class='row'>
+						<!-- Student ID -->
+						<div class="input-group">
+							<span class="input-group-addon">Student ID *</span>
+							<input type="number" class="form-control" name='studentid' required='required'>
+						</div>
+					</div>
+					<div class='row'>
+						<!-- Name -->
+						<div class="input-group">
+							<span class="input-group-addon">Name *</span>
+							<input type="text" class="form-control" name='name' required='required'>
+						</div>
+					</div>
+					<div class='row'>
+						<!-- Password -->
+						<div class="input-group">
+							<span class="input-group-addon">Password *</span>
+							<input type="password" class="form-control" name='password' required='required'>
+						</div>
+					</div>
+					<div class='row'>
+						<!-- Password Double Check -->
+						<div class="input-group">
+							<span class="input-group-addon">Password Double Check *</span>
+							<input type="password" class="form-control" name='passworddouble' required='required'>
+						</div>
+					</div>
+					<div class='row'>
+						<!-- E-mail address -->
+						<div class="input-group">
+							<span class="input-group-addon">E-mail address *</span>
+							<input type="email" class="form-control" name='email' required='required'>
+						</div>
+					</div>
+					<div class='row'>
+						<!-- Address -->
+						<div class="input-group">
+							<span class="input-group-addon">Address</span>
+							<input type="text" class="form-control" name='address'>
+						</div>
+					</div>
+					<div class='row'>
+						<!-- Date of Birth -->
+						<div class="input-group">
+							<span class="input-group-addon">Date of Birth</span>
+							<input type="date" class="form-control" name='birthday'>
+						</div>
+					</div>
+					<div class='row'>
+						<!-- Phone number -->
+						<div class="input-group">
+							<span class="input-group-addon">Phone number</span>
+							<input type="tel" class="form-control" name='phonenumber'>
+						</div>
+					</div>
+					<div class='row flex-row-between'>
+						<!-- Reset -->
+						<div class='btn-danger btn' id='register--student--reset'>
+							Reset
+						</div>
+						<!-- Confirm -->
+						<div class='btn-success btn' id='register--student--confirm'>
+							Confirm
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- registration staff page -->
+		<div id='registration--page--staff' class='container-fluid flex-col align-center jus-center page hidden'>
+			<div class='col-lg-8 col-md-8 col-sm-12 col-xs-12'>
+				<div class='row'>
+					<span class="btn btn-primary glyphicon glyphicon-arrow-left back-btn"></span>
+				</div>
+				<div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 register-form flex-col jus-center align-center' id='register--staff--form'>
+					<div class='row text-primary'>
+						<h2>Register as Staff</h2>
+					</div>
+					<div class='row'>
+						<!-- Staff ID -->
+						<div class="input-group">
+							<span class="input-group-addon">Staff ID *</span>
+							<input type="number" class="form-control" name='staffid' required='required'>
+						</div>
+					</div>
+					<div class='row'>
+						<!-- Name -->
+						<div class="input-group">
+							<span class="input-group-addon">Name *</span>
+							<input type="text" class="form-control" name='name' required='required'>
+						</div>
+					</div>
+					<div class='row'>
+						<!-- Password -->
+						<div class="input-group">
+							<span class="input-group-addon">Password *</span>
+							<input type="password" class="form-control" name='password' required='required'>
+						</div>
+					</div>
+					<div class='row'>
+						<!-- Password Double Check -->
+						<div class="input-group">
+							<span class="input-group-addon">Password Double Check *</span>
+							<input type="password" class="form-control" name='passworddouble' required='required'>
+						</div>
+					</div>
+					<div class='row'>
+						<!-- E-mail address -->
+						<div class="input-group">
+							<span class="input-group-addon">E-mail address *</span>
+							<input type="email" class="form-control" name='email' required='required'>
+						</div>
+					</div>
+					<div class='row'>
+						<!-- Qualification -->
+						<div class="input-group">
+							<span class="input-group-addon">Qualification *</span>
+							<select class="form-control" name='qualification' required='required'>
+								<option value='PhD'>PhD</option>
+								<option value='Master'>Master</option>
+							</select>
+						</div>
+					</div>
+					<div class='row'>
+						<!-- Expertise -->
+						<div class="input-group">
+							<span class="input-group-addon">Expertise *</span>
+							<select class="form-control" name='expertise' required='required'>
+								<option value='Information Systems'>Information Systems</option>
+								<option value='Human Computer Interaction'>Human Computer Interaction</option>
+								<option value=' Network Administration'>Network Administration</option>
+							</select>
+						</div>
+					</div>
+					<div class='row'>
+						<!-- Address -->
+						<div class="input-group">
+							<span class="input-group-addon">Address</span>
+							<input type="text" class="form-control" name='address'>
+						</div>
+					</div>
+					<div class='row'>
+						<!-- Date of Birth -->
+						<div class="input-group">
+							<span class="input-group-addon">Date of Birth</span>
+							<input type="date" class="form-control" name='birthday'>
+						</div>
+					</div>
+					<div class='row'>
+						<!-- Phone number -->
+						<div class="input-group">
+							<span class="input-group-addon">Phone number</span>
+							<input type="tel" class="form-control" name='phonenumber'>
+						</div>
+					</div>
+					<div class='row flex-row-between'>
+						<!-- Reset -->
+						<div class='btn-danger btn' id='register--staff--reset'>
+							Reset
+						</div>
+						<!-- Confirm -->
+						<div class='btn-success btn' id='register--staff--confirm'>
+							Confirm
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src='../javascript/jquery-3.4.1.min.js'></script>
+	<script src='../javascript/registration.js'></script>
+</html>

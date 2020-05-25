@@ -1,0 +1,80 @@
+html,
+body {
+	height: 100%;
+}
+
+.page {
+	min-height: 100%;
+}
+
+.flex,
+.flex-row,
+.flex-col,
+.flex-row-center,
+.flex-row-end,
+.flex-row-between,
+.flex-row-start,
+.flex-col-center,
+.flex-center {
+	display: flex;
+}
+
+.flex-row,
+.flex-row-center,
+.flex-row-end,
+.flex-row-between,
+.flex-row-start{
+	flex-direction: row;
+}
+
+.flex-col,
+.flex-col-center {
+	flex-direction: column;
+}
+
+.jus-center,
+.flex-col-center,
+.flex-center {
+	justify-content: center;
+}
+
+.flex-row-end {
+	justify-content: flex-end;
+}
+
+.flex-row-between{
+	justify-content: space-between;
+}
+
+.align-center,
+.flex-row-center,
+.flex-center {
+	align-items: center;
+}
+
+.flex-row-start {
+	justify-content: flex-start;
+}
+
+.height-inherit {
+	height: inherit;
+}
+
+.form-control::-webkit-input-placeholder {
+	color: red;
+}
+
+.form-control::-moz-placeholder {
+	/* Mozilla Firefox 19+ */
+	color: red;
+}
+
+.form-control:-moz-placeholder {
+	/* Mozilla Firefox 4 to 18 */
+	color: red;
+}
+
+.form-control:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: red;
+}

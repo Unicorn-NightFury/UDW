@@ -1,0 +1,44 @@
+#registration--page {
+	height: 100%;
+}
+
+#registration--main>div.row {
+	margin: 10vh 0;
+	min-width: 150px;
+}
+
+#registration--main>div.row:nth-child(2) {
+	margin: 0;
+}
+
+#registration--main>div.row>button.btn {
+	min-width: 150px;
+	max-width: 150px;
+}
+
+#registration--title {
+	font-size: 40px;
+}
+
+#last-page {
+	transform: translateX(-15px);
+}
+
+#last-page,
+.back-btn {
+	margin: 20px 0!important;
+}
+
+.register-form,
+.register-form>div.row,
+.register-form>div.row:last-child {
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.register-form>div.row>h1,
+.register-form>div.row>div.input-group,
+.register-form>div.row:last-child {
+	margin: 10px auto;
+	max-width: 350px;
+}

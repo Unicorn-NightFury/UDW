@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../static/img/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+}
+
+.register {
+    height: 500px;
+    width: 450px;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, .9);
+}
+
+.register-title {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+}
+.title-line {
+    position: absolute;
+    bottom: 7px;
+    height: 2px;
+    background-color: #4fc08d;
+    width: 96px;
+    left: 65px;
+    transition: all .3s ease-in-out;
+}
+.title-line-ani {
+    left: 307px !important;
+    width: 60px;
+}
+.title-text {
+    text-align: center;
+    position: relative;
+    height: 100%;
+    width: 50%;
+    float: left;
+    font-size: 20px;
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, .8);
+    font-weight: 600;
+}
+.text {
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.text-click {
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, .8);
+}
+
+.box {
+    position: relative;
+    height: 450px;
+    width: 200%;
+    /* background-color: red; */
+}
+
+.box-child {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 50%;
+    transition: all .5s ease-in-out;
+}
+.box-child-ani {
+    transform: translate(-100%, 0);
+}
+
+.inputBox {
+    position: relative;
+    height: 30px;
+}
+.inputBox input {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid #4fc08d;
+    background-color: transparent;
+    box-sizing: border-box;
+    padding: 5px 5px;
+    color: #4fc08d;
+    font-size: 20px;
+    font-weight: 200 !important;
+}
+.inputBox label {
+    position: absolute;
+    top: 7px;
+    left: 5px;
+    color: rgba(79, 192, 141, .6);
+    z-index: 1;
+    transition: .3s ease;
+}
+.label-ani {
+    top: -7px !important;
+    left: 0px !important;
+    font-size: 8px !important;
+}
+
+
+.password-input {
+    font-size: 14px !important;
+}
+.password-label {
+    font-size: 14px;
+}
+
+.short-box {
+    width: 180px;
+    margin: 30px 20px;
+    float: left !important;
+}
+
+.long-box {
+    clear: both;
+    width: 400px;
+    margin: 30px auto 0px;
+}
+
+#stu-birthday {
+    font-size: 16px;
+}
+
+
+
+.register-btn {
+    clear: both;
+    height: 40px;
+    width: 120px;
+    background-color: rgba(79, 192, 141, .7);
+    margin: 10px auto;
+    color: rgba(255, 255, 255, .9);
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+}
+.register-btn:hover {
+    cursor: pointer;
+    animation: jelly 0.5s;
+}
+@keyframes jelly {
+    0%,
+    100% {
+        transform: scale(1, 1);
+    }
+
+    33% {
+        transform: scale(0.9, 1.1);
+    }
+
+    66% {
+        transform: scale(1.1, 0.9);
+    }
+}

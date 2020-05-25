@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="register">
+            <div class="register-title">
+                <div class="title-line"></div>
+                <div class="title-student title-text">
+                    <span class="text text-student">STUDENT</span>
+                </div>
+                <div class="title-staff title-text">
+                    <span class="text text-staff">STAFF</span>
+                </div>
+            </div>
+            <div class="box">
+
+                <div class="box-student box-child">
+                    <div class="box-content">
+                        <div class="inputBox short-box">
+                            <input type="text" id="stu-id">
+                            <label for="stu-id">STUDENT ID*</label>
+                        </div>
+                        <div class="inputBox short-box">
+                            <input type="text" id="stu-name">
+                            <label for="stu-name">STUDENT NAME*</label>
+                        </div>
+                        <div class="inputBox long-box">
+                            <input type="text" id="stu-email">
+                            <label for="stu-email">STUDENT EMAIL*</label>
+                        </div>
+                        <div class="inputBox short-box">
+                            <input type="password" id="stu-password-one" class="password-input">
+                            <label for="stu-password-one" class="password-label">PASSWORD*</label>
+                        </div>
+                        <div class="inputBox short-box">
+                            <input type="password" id="stu-password-two" class="password-input">
+                            <label for="stu-password-two" class="password-label">PASSWORD*(Input again)</label>
+                        </div>
+                        <div class="inputBox long-box">
+                            <input type="text" id="stu-address">
+                            <label for="stu-address">STUDENT ADDRESS</label>
+                        </div>
+                        <div class="inputBox short-box">
+                            <input type="date" id="stu-birthday">
+                        </div>
+                        <div class="inputBox short-box">
+                            <input type="text" id="stu-phone">
+                            <label for="stu-phone">PHONE NUMBER</label>
+                        </div>
+
+                        <div class="register-btn stu-btn">WELCOME</div>
+                    </div>
+                </div>
+
+                <div class="box-staff box-child">
+                    <div class="box-content">
+                        <div class="inputBox short-box">
+                            <input type="text" id="sta-id">
+                            <label for="sta-id">STAFF ID*</label>
+                        </div>
+                        <div class="inputBox short-box">
+                            <input type="text" id="sta-name">
+                            <label for="sta-name">STAFF NAME*</label>
+                        </div>
+                        <div class="inputBox long-box">
+                            <input type="text" id="sta-email">
+                            <label for="sta-email">STAFF EMAIL*</label>
+                        </div>
+                        <div class="inputBox short-box">
+                            <input type="password" id="sta-password-one" class="password-input">
+                            <label for="sta-password-one" class="password-label">PASSWORD*</label>
+                        </div>
+                        <div class="inputBox short-box">
+                            <input type="password" id="sta-password-two" class="password-input">
+                            <label for="sta-password-two" class="password-label">PASSWORD*(Input again)</label>
+                        </div>
+                        <div class="inputBox long-box">
+                            <input type="text" id="sta-address">
+                            <label for="sta-address">STAFF ADDRESS</label>
+                        </div>
+                        <div class="inputBox short-box">
+                            <input type="date" id="sta-birthday" placeholder="BIRTHDAY">
+                        </div>
+                        <div class="inputBox short-box">
+                            <input type="text" id="sta-phone">
+                            <label for="sta-phone">PHONE NUMBER</label>
+                        </div>
+
+                        <div class="register-btn sta-btn">WELCOME</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <script src="../javascript/jquery-3.4.1.min.js"></script>
+    <script src="../javascript/register.js"></script>
+</body>
+</html>
