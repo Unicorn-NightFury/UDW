@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Management</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/unitManagement.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="nav">
+            <div class="nav-title">
+                <div>Welcome</div>
+                <div class="nav-name">Uni</div>   
+            </div>
+            <div class="nav-content">
+                <li>Unit Description</li>
+                <li>User Account</li>
+                <li>Academic Staff</li>
+                <li>Unit</li>
+                <li>Unit Enrolment</li>
+                <li>Individual Timetable</li>
+                <li>Unit Management / allocating teaching staff</li>
+                <li>Tutorial Allocation</li>
+                <li>Enrolled Student Details</li>
+            </div>
+        </div>
+
+        <div class="nav-btn">
+            <span class="line top"></span>
+            <span class="line middle"></span>
+            <span class="line bottom"></span>
+        </div>
+
+
+        <div class="main">
+
+            <div class="main-create">
+                <div class="main-create-title"><span>
+                    UNIT MANAGEMENT
+                </span></div>
+
+                <div class="main-create-list">
+                    <div class="main-create-item">
+                        <input type="text" placeholder="Input unit name" id="unit-name">
+                        <span></span>
+                    </div>
+
+                    <div class="main-create-item">
+                        <input type="text" placeholder="Input lecturer's school id" id="unit-lecturer">
+                        <span></span>
+                    </div>
+
+                    <div class="main-create-item">
+                        <input type="text" placeholder="Input unit capacity(only number)" id="unit-capacity">
+                        <span></span>
+                    </div>
+
+                    <div class="main-create-item">
+                        <select class="form-control" name='expertise' required='required' id="unit-campuses">
+                            <option value='Pandora'>Pandora</option>
+                            <option value='Rivendell'>Rivendell</option>
+                            <option value='Neverland'>Neverland</option>
+                        </select>
+                    </div>
+                    <div class="main-create-item">
+                        <select class="form-control" name='expertise' required='required' id="unit-periods">
+                            <option value='Semester 1'>Semester 1</option>
+                            <option value='Semester 2'>Semester 2</option>
+                            <option value='Winter School'>Winter School</option>
+                            <option value='Spring School'>Spring School</option>
+                        </select>
+                    </div>
+
+                    <div class="main-create-description">
+                        <div id="description" contenteditable="true" >&nbsp;Input this unit description...</div>
+                    </div>
+                </div>
+
+                <div class="main-create-btn">
+                    <span>
+                        CREATE
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="main-list"></div>
+        </div>
+    </div>
+
+    
+    <script src="../javascript/jquery-3.4.1.min.js"></script>
+    <script src="../javascript/unitManagement.js"></script>
+</body>
+</html>
