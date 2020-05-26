@@ -371,6 +371,7 @@ html, body {
     line-height: 30px;
     color: #87daff;
     cursor: pointer;
+    z-index: 10;
 }
 
 
@@ -438,4 +439,18 @@ html, body {
     cursor: pointer;
     background-color: rgba(0, 0, 0, .8);
 
+}
+.unit-change-close {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 25px;
+    color: black;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    transform: rotate(45deg);
+    z-index: 10;
 }
