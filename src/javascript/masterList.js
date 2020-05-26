@@ -7,20 +7,7 @@
     }
 })(window, document);
 
-// ((window, document) => {
-//     $('.main-create-btn').click(() => {
-//         let data = {
-//             name: $("#unit-name").val(),
-//             lecturer: $("#unit-lecturer").val(),
-//             capacity: $("#unit-capacity").val(),
-//             campuses: $("#unit-campuses").val(),
-//             periods: $("#unit-periods").val(),
-//             description: $("#description").text()
-//         }
 
-//         console.log(data)
-//     })
-// })(window, document);
 
 
 // change
@@ -100,10 +87,11 @@
     $(document).on('click', '.unit-item-change', function() {
         $('.main-list-unit').addClass('shadow-show');
         $('.unit-change-box').fadeIn();
+        let name = $(this).parent().parent().find('.unit-item-name').text();
         let text = $(this).parent().parent().find('.change-item-val').text();
         let arr = text.split(";");
         let data = {
-            name: "arr[]",
+            name: name,
             lecturer: arr[0],
             capacity: arr[1],
             campuse: arr[2],

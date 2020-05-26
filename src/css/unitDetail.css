@@ -1,0 +1,182 @@
+* {
+    padding: 0 !important;
+}
+
+html, body {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+/*  */
+.container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.nav {
+    top: 0;
+    position: relative;
+    height: 100%;
+    width: 0px;
+    background-color: #222;
+    float: left;
+    transition: all .3s ease;
+    overflow: hidden;
+    min-height: 100%;
+}
+.nav_slide {
+    width: 250px;
+}
+.nav-title {
+    position: relative;
+    font-size: 20px;
+    color: white;
+    height: 70px;
+    width: auto;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 600;
+}
+.nav-name {  
+    position: relative;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+}
+.nav-content {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    height: 55%;
+    overflow: hidden;
+}
+.nav-content li {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 10px;
+    color: #999;
+    font-weight: 600;
+}
+.nav-content li:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.sign-box {
+    position: relative !important;
+    height: 70px;
+    width: 50%;
+    margin: 20px auto;
+    /* margin-top: 20px;s */
+}
+.choose-sign {
+    position: relative;
+    height: 35px;
+    width: 100%;
+    text-align: center;
+    line-height: 35px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all .3s ease;
+}
+.login {color: white;}
+.register {color: #999;}
+.choose-sign span {
+    cursor: pointer;
+}
+.choose-color-one {
+    color: #999;
+}
+.choose-color-two {
+    color: white;
+}
+.sign-light-box {
+    position: absolute;
+    height: 35px;
+    width: 100%;
+    background-color: #87daff;
+    z-index: 0;
+    transition: transform .3s ease;
+}
+.sign-light-box-ani {
+    transform: translate(0, 100%);
+}
+/*  */
+.nav-btn {
+    position: absolute;
+    bottom: 45px;
+    left: 30px;
+    background-color: #222;
+    height: 24px;
+    width: 24px;
+    z-index: 2;
+    cursor: pointer;
+}
+.line {
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    left: 5px;
+    width: 14px;
+    height: 2px;
+    transition: .3s ease;
+}
+.top {
+    top: 4px;
+}
+.middle {
+    top: 10px;
+}
+.bottom {
+    top: 16px;
+}
+
+
+.nav-btn-hover .line {
+    background-color: #87daff;
+}
+.nav-btn-hover .top {
+    width: 7px;
+    left: 12px;
+    top: 7px;
+    transform: rotate(45deg);
+}
+.nav-btn-hover .bottom {
+    width: 7px;
+    left: 12px;
+    top: 13px;
+    transform: rotate(-45deg);
+}
+
+.nav-btn-click .line {
+    background-color: #87daff;
+}
+.nav-btn-click .top {
+    width: 14px;
+    left: 5px;
+    top: 12px;
+    transform: rotate(-45deg);
+}
+.nav-btn-click .middle {
+    opacity: 0;
+}
+.nav-btn-click .bottom {
+    width: 14px;
+    left: 5px;
+    top: 12px;
+    transform: rotate(45deg);
+}
+
+
+
+.main {
+    position: relative;
+    height: 100%;
+    width: auto;
+    background-color: #f8f8f8;
+    box-sizing: border-box;
+    overflow: hidden;
+}
