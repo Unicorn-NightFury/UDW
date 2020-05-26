@@ -178,5 +178,50 @@ html, body {
     width: auto;
     background-color: #f8f8f8;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.main-left {
+    position: relative;
+    height: auto;
+    width: 40%;
+}
+.main-right {
+    position: relative;
+    height: auto;
+    width: 40%;
+}
+
+.unit-item {
+    width: 100%;
+    margin: 25px auto;
+    border: 2px solid rgba(200, 200, 200, .8);
+    transition: all .5s ease;
+}
+.unit-item:hover {
+    transform: translate(0, -10px);
+    box-shadow: 0px 7px 3px rgba(0, 0, 0, .8);
+}
+.unit-detail {
+    position: relative;
+    height: auto;
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 30px;
+}
+.unit-choose {
+    position: relative;
+    height: 40px;
+    width: 120px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    margin: 10px auto;
+    cursor: pointer;
 }
