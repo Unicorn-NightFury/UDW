@@ -295,6 +295,7 @@ html, body {
     height: 100%;
     width:  100%;
     overflow-y: scroll;
+    transition: all .5s ease;
 }
 .main-list-unit-item {
     height: 200px;
@@ -313,6 +314,11 @@ html, body {
 }
 .unit-item-detail {
     height: auto;
+}
+.unit-item-unshow {
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 50px;
 }
 .unit-item-id {
     position: absolute;
@@ -346,5 +352,90 @@ html, body {
     width: 100%;
     float: left;
     /* margin:  10px; */
-    min-height: 100px;
+    word-break: break-all; 
+    word-wrap: break-word;
+}
+.unit-item-croll {
+    position: relative;
+    float: left;
+    height: 50px;
+    width: 100%;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+.unit-item-controll {
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    line-height: 30px;
+    color: #87daff;
+    cursor: pointer;
+}
+
+
+
+.shadow-show {
+    filter: blur(10px);
+}
+
+.unit-change-box {
+    top: 20px;
+    position: absolute;
+    height: 500px;
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, .8);
+    border-radius: 10px;
+    z-index: 3;
+    /* display: none; */
+    transition: all .7s ease;
+}
+.unit-change-input {
+    position: relative;
+    height: 30px;
+    width: 50%;
+    margin: 20px auto;
+    /* background-color: black; */
+    z-index: 5;
+    float: left;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.unit-change-input-name {
+    width: 100% !important;
+    justify-content: center !important;
+
+}
+.unit-change-descript {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+.unit-change-descript textarea {
+    height: 100%;
+    width: 80%;
+}
+.float-clear {
+    content: '';
+    display: block;
+    clear: both;
+}
+.unit-change-btn {
+    height: 40px;
+    width: 120px;
+    margin: 20px auto;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .8);
+
 }

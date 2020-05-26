@@ -64,15 +64,159 @@
             <div class="unit-item-name">
                 ${data.name}
             </div>
-            <div class="unit-item-lecturer unit-item-tip">Lecturer:&nbsp;${data.lecturer}</div>
-            <div class="unit-item-capacity unit-item-tip">Capacity:&nbsp;${data.capacity}</div>
-            <div class="unit-item-campause unit-item-tip">Campause:&nbsp;${data.campuses}</div>
-            <div class="unit-item-period unit-item-tip">Period:&nbsp;${data.period}</div>
-            <div class="unit-item-description unit-item-detail">Description:&nbsp;&nbsp;&nbsp;${data.description}</div>
+            <div class="unit-item-lecturer unit-item-tip">Lecturer:&nbsp;<span class="change-item-val">${data.lecturer}</span></div>
+            <div class="unit-item-capacity unit-item-tip">Capacity:&nbsp;<span class="change-item-val">${data.capacity}</span></div>
+            <div class="unit-item-campause unit-item-tip">Campause:&nbsp;<span class="change-item-val">${data.campuses}</span></div>
+            <div class="unit-item-period unit-item-tip">Period:&nbsp;<span class="change-item-val">${data.periods}</span></div>
+            <div class="unit-item-description unit-item-unshow">Description:&nbsp;&nbsp;&nbsp;<p><span class="change-item-val">${data.description}</span></p></div>
+            <div class="unit-item-croll">
+                <div class="unit-item-delete unit-item-controll">Delete</div>
+                <div class="unit-item-change unit-item-controll">修改</div>
+                <div class="unit-item-show unit-item-controll">show detail</div>
+            </div>
         </div>
         `
 
         $('.main-list-unit').append(el);
+        $("#unit-name").val("");
+        $("#unit-lecturer").val("");
+        $("#unit-capacity").val("");
+        $("#unit-campuses").val("");
+        $("#unit-periods").val("");
+        $("#description").val("");
     }
+    $(document).on("click", ".unit-item-show" ,function() {
+        $(this).parent().parent().addClass("unit-item-detail");
+        $(this).parent().siblings(".unit-item-description").removeClass('unit-item-unshow');
+    });
+
+
+    $(document).on('click', '.unit-item-controll', function() {
+        let ele = `
+        <div class="unit-change-box">
+            <div class="unit-change-input unit-change-input-name">
+                <span>Name: &nbsp;</span>
+                <input type="text" id="change-name">
+            </div>
+            <div class="unit-change-input">
+                <span>Lecturer:</span>
+                <input type="text" id="change-lecturer">
+            </div>
+            <div class="unit-change-input">
+                <span>Capacity:</span>
+                <input type="text" id="change-capacity">
+            </div>
+            <div class="unit-change-input">
+                <span>Campause:</span>
+                <select class="form-control" name='expertise' required='required' id="change-campuses">
+                    <option value='Pandora'>Pandora</option>
+                    <option value='Rivendell'>Rivendell</option>
+                    <option value='Neverland'>Neverland</option>
+                </select>
+            </div>
+            <div class="unit-change-input">
+                <span>Period:</span>
+                <select class="form-control" name='expertise' required='required' id="change-periods">
+                    <option value='Semester 1'>Semester 1</option>
+                    <option value='Semester 2'>Semester 2</option>
+                    <option value='Winter School'>Winter School</option>
+                    <option value='Spring School'>Spring School</option>
+                </select>
+            </div>
+            
+            <div class="unit-change-descript">
+                <textarea name="" id="" cols="30" rows="10" id="change-description"></textarea>
+            </div>
+
+            <div class="float-clear"></div>
+            <div class="unit-change-btn">
+                Change
+            </div>
+        </div>
+        `
+        $('.main-list').append(ele);
+
+        $('#change-name').val(data.name);
+        $('#change-lecturer').val(data.lecturer);
+        $('#change-capacity').val(data.capacity);
+        $('#change-campuses').val(data.campuse);
+        $('#change-periods').val(data.period);
+        $('#change-description').val(data.description);
+    })
 
 })(window, document);
+
+
+// unit-item-controll
+// ((window, document) => {
+//     $(document).on("click", ".unit-item-show" ,function() {
+//         $(this).parent().parent().addClass("unit-item-detail");
+//         $(this).parent().siblings(".unit-item-description").removeClass('unit-item-unshow');
+//     });
+
+
+//     $(document).on('click', '.unit-item-controll', function() {
+//         let text = $(this).parent().parent().find('.change-item-val').text();
+//         let arr = text.split(";");
+//         let data = {
+//             name: arr[0],
+//             lecturer: arr[1],
+//             capacity: arr[2],
+//             campause: arr[3],
+//             period: arr[4],
+//             description: arr[5]
+//         }
+        
+//         console.log(data);
+//         let el = `
+//         <div class="unit-change-box">
+//             <div class="unit-change-input unit-change-input-name">
+//                 <span>Name: &nbsp;</span>
+//                 <input type="text" id="change-name">
+//             </div>
+//             <div class="unit-change-input">
+//                 <span>Lecturer:</span>
+//                 <input type="text" id="change-lecturer">
+//             </div>
+//             <div class="unit-change-input">
+//                 <span>Capacity:</span>
+//                 <input type="text" id="change-capacity">
+//             </div>
+//             <div class="unit-change-input">
+//                 <span>Campause:</span>
+//                 <select class="form-control" name='expertise' required='required' id="change-campuses">
+//                     <option value='Pandora'>Pandora</option>
+//                     <option value='Rivendell'>Rivendell</option>
+//                     <option value='Neverland'>Neverland</option>
+//                 </select>
+//             </div>
+//             <div class="unit-change-input">
+//                 <span>Period:</span>
+//                 <select class="form-control" name='expertise' required='required' id="change-periods">
+//                     <option value='Semester 1'>Semester 1</option>
+//                     <option value='Semester 2'>Semester 2</option>
+//                     <option value='Winter School'>Winter School</option>
+//                     <option value='Spring School'>Spring School</option>
+//                 </select>
+//             </div>
+            
+//             <div class="unit-change-descript">
+//                 <textarea name="" id="" cols="30" rows="10" id="change-description"></textarea>
+//             </div>
+
+//             <div class="float-clear"></div>
+//             <div class="unit-change-btn">
+//                 Change
+//             </div>
+//         </div>
+//         `
+//         $('.main-list').append(el);
+
+//         $('#change-name').val(data.name);
+//         $('#change-lecturer').val(data.lecturer);
+//         $('#change-capacity').val(data.capacity);
+//         $('#change-campuses').val(data.campuse);
+//         $('#change-periods').val(data.period);
+//         $('#change-description').val(data.description);
+//     })
+// })(window, document);
