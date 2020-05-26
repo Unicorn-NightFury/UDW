@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unit Management</title>
+    <title>Master List</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/unitManagement.css">
+    <link rel="stylesheet" href="../css/masterList.css">
 </head>
 <body>
 
@@ -16,15 +16,8 @@
                 <div class="nav-name">Uni</div>   
             </div>
             <div class="nav-content">
-                <li>Unit Description</li>
-                <li>User Account</li>
-                <li>Academic Staff</li>
-                <li>Unit</li>
-                <li>Unit Enrolment</li>
-                <li>Individual Timetable</li>
-                <li>Unit Management / allocating teaching staff</li>
-                <li>Tutorial Allocation</li>
-                <li>Enrolled Student Details</li>
+                <li class="li-unit">Unit</li>
+                <li class="li-staff">Academic Staff</li>
             </div>
         </div>
 
@@ -39,7 +32,7 @@
 
             <div class="main-create">
                 <div class="main-create-title"><span>
-                    UNIT MANAGEMENT
+                    UNIT
                 </span></div>
 
                 <div class="main-create-list">
@@ -75,7 +68,7 @@
                     </div>
 
                     <div class="main-create-description">
-                        <div id="description" contenteditable="true" >&nbsp;Input this unit description...</div>
+                        <textarea id="description" contenteditable="true" placeholder="Input this unit description..."></textarea>
                     </div>
                 </div>
 
@@ -87,12 +80,38 @@
             </div>
 
 
-            <div class="main-list"></div>
+            <div class="main-list">
+
+                <div class="main-list-unit">
+                    <div class="main-list-unit-item">
+                        <div class="unit-item-id">ID: 1</div>
+                        <div class="unit-item-name">
+                            CS NETWORK
+                        </div>
+                        <div class="unit-item-lecturer unit-item-tip">Lecturer:&nbsp;Uni</div>
+                        <div class="unit-item-capacity unit-item-tip">Capacity:&nbsp;180</div>
+                        <div class="unit-item-campause unit-item-tip">Campause:&nbsp;Pandora</div>
+                        <div class="unit-item-period unit-item-tip">Period:&nbsp;Spring School</div>
+                        <div class="unit-item-description">Description:&nbsp;&nbsp;&nbsp;</div>
+                    </div>
+                    <!-- <div class="main-list-unit-item"></div>
+
+                    <div class="main-list-unit-item"></div>
+
+                    <div class="main-list-unit-item"></div>
+
+                    <div class="main-list-unit-item"></div> -->
+
+                </div>
+
+                <!-- <div class="main-list-staff"></div> -->
+
+            </div>
         </div>
     </div>
 
     
     <script src="../javascript/jquery-3.4.1.min.js"></script>
-    <script src="../javascript/unitManagement.js"></script>
+    <script src="../javascript/masterList.js"></script>
 </body>
 </html>

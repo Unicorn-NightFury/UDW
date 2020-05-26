@@ -175,18 +175,28 @@ html, body {
 
 /* main */
 .main {
+    position: relative;
     height: 100%;
     width: auto;
-    background-color: pink;
+    background-color: #f8f8f8;
     box-sizing: border-box;
     overflow: hidden;
 }
 
+.main-change {
+    width: 0px !important;
+}
+
+
 .main-create {
     position: relative;
     height: 100%;
-    width: 230px;
+    width: 25%;
     background-color: white;
+    transition: all .3s ease;
+    transform-origin: left;
+    float: left;
+    overflow: hidden;
 }
 .main-create-title {
     position: relative;
@@ -237,13 +247,14 @@ html, body {
     margin: 10px auto;
     box-sizing: border-box;
     border: 1px rgba(200, 200, 200, .9) solid;
+    overflow: hidden;
 }
-.main-create-description div {
+.main-create-description textarea {
     height: 100%;
     width: 100%;
     padding-left: 10px;
     box-sizing: border-box;
-    overflow-y: scroll;
+    overflow: hidden;
 }
 .main-create-btn {
     height: 40px;
@@ -259,4 +270,81 @@ html, body {
 }
 .main-create-btn:hover {
     color: white;
+}
+
+
+
+/* main-list */
+.main-list {
+    position: relative;
+    height: 100%;
+    width: 75%;
+    float: left;
+    background-color: #f8f8f8;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: all .3s ease;
+}
+.main-list-change {
+    width: 100% !important;
+}
+
+/* 1. main-list-unit */
+.main-list-unit {
+    position: relative;
+    height: 100%;
+    width:  100%;
+    overflow-y: scroll;
+}
+.main-list-unit-item {
+    height: 200px;
+    width: 600px;
+    position: relative;
+    background-color: white;
+    border: 1px #222 solid;
+    margin: 20px auto;
+    transition: all .5s ease;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.main-list-unit-item:hover {
+    transform: translate(0, -5px);
+    box-shadow: 0px 7px 2px rgba(200, 200, 200, .9);
+}
+.unit-item-detail {
+    height: auto;
+}
+.unit-item-id {
+    position: absolute;
+    height: 20px;
+    width: 70px;
+    left: 0px;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+}
+.unit-item-name {
+    height: 30px;
+    width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+}
+.unit-item-tip {
+    height: 20px;
+    width: 50%;
+    margin-top: 10px;
+    float: left;
+    text-align: center;
+    line-height: 20px;
+}
+.unit-item-description {
+    position: relative;
+    width: 100%;
+    float: left;
+    /* margin:  10px; */
+    min-height: 100px;
 }
