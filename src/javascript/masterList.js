@@ -53,7 +53,7 @@
 
                 let el = `
                     <div class="main-list-unit-item">
-                        <div class="unit-item-id">${obj.unit_id}</div>
+                        <div class="unit-item-id">ID: ${obj.unit_id}</div>
                         <div class="unit-item-name">
                             ${obj.name}
                         </div>
@@ -96,7 +96,7 @@
     $(document).on('click', '.unit-item-change', function() {
         $('.main-list-unit').addClass('shadow-show');
         $('.unit-change-box').fadeIn();
-        let unit_id = $(this).parent().parent().find('.unit-item-id').text()
+        let unit_id = $(this).parent().parent().find('.unit-item-id').text().split(": ")[1];
         let name = $(this).parent().parent().find('.unit-item-name').text();
         let text = $(this).parent().parent().find('.change-item-val').text();
         let arr = text.split(";");
@@ -181,7 +181,7 @@
                     let obj = data.data;
                     let el = `
                     <div class="main-list-unit-item">
-                        <div class="unit-item-id">${obj.unit_id}</div>
+                        <div class="unit-item-id">ID: ${obj.unit_id}</div>
                         <div class="unit-item-name">
                             ${obj.name}
                         </div>

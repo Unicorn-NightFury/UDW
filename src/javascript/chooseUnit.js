@@ -44,6 +44,13 @@
 // go to choose
 ((window, document) => {
 
+    $(document).on('click', '.unit-choose', function() {
+        let data = {
+            unit_id: $(this).parent().find(".unit-id").text().split(": ")[1],
+            student_id: localStorage.getItem('udw').student_id,
+        }
+        
+    })
     
 
 })(window, document)
