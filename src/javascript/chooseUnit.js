@@ -34,7 +34,7 @@
             <div class="unit-detail unit-uc">UC: ${item.un_name}</div>
             <div class="unit-detail unit-tutor">Tutor: ${item.tutor_name}</div>
             <div class="unit-detail unit-description">Desctiption: ${item.description}</div>
-            <div class="unit-tochoose">go to choose >></div>
+            <div class="unit-choose">Choose</div>
         </div>
         `
         return el;
@@ -44,8 +44,6 @@
 // go to choose
 ((window, document) => {
 
-    $(document).on('click', '.unit-tochoose', function() {
-        window.location.href = '/src/html/chooseUnit.html'
-    })
+    
 
 })(window, document)
